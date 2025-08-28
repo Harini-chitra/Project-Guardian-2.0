@@ -35,21 +35,3 @@ The solution is implemented in `detector_full_harinichitra.py`. It uses a **hybr
 ```bash
 git clone https://github.com/your-username/Project-Guardian-2.0.git
 cd Project-Guardian-2.0
-
-**Run the script with the following command **:
-
-```bash
-python3 detector_full_harinichitra.py iscp_pii_dataset_-_Sheet1
-
-
-## Deployment Strategy
-
-The proposed deployment approach is to integrate the PII detection and redaction logic as a **Sidecar container** in a Kubernetes environment.
-
-### Advantages
-
-- **Scalability**: Sidecar can scale independently of the main application, preventing bottlenecks.  
-- **Low Latency**: Running in the same pod ensures minimal network latency.  
-- **Ease of Integration**: Can be attached to any application without modifying its codebase.  
-- **Cost-Effectiveness**: Eliminates the need for a dedicated PII detection service.
-
